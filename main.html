@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Asegúrate de que la ruta al CSS es correcta. -->
+    <link rel="stylesheet" href="../proyecto graficos/style.css/styles.css"> <!-- Actualiza esta ruta según sea necesario. -->
+    <title>Gráfico de Trabajos</title>
+</head>
+<body>
+
+    <header>
+        <h1>Gráfico de Trabajos</h1>
+    </header>
+
+    <section class="horizontal-selector">
+        <div class="selector-item">Inicio</div>
+        <div class="selector-item">Saber más</div>
+        <div class="selector-item">Contacto</div>
+    </section>
+
+    <section class="job-selector">
+        <label for="jobType">Selecciona el tipo de trabajo:</label>
+        <select id="jobType" onchange="fetchAndRenderGraph()">
+            <option value="proyecto">Proyecto</option>
+            <option value="tarea">Tarea</option>
+        </select>
+    </section>
+
+    <canvas id="jobChart" width="400" height="200"></canvas>
+
+    <!-- Asegúrate de que la ruta al script.js es correcta. -->
+    <script src="script.js"></script> <!-- Actualiza esta ruta según sea necesario. -->
+</body>
+</html>

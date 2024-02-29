@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.horizontal-selector {
+    display: flex;
+    justify-content: space-around ;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.selector-item {
+    flex: 0 0 auto;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.selector-item:hover {
+    background-color: #ccc;
+}
